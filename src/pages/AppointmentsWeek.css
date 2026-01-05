@@ -1,0 +1,287 @@
+.ap-week {
+  margin-top: 14px;
+}
+
+.ap-weekTop {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.ap-weekTitle {
+  font-size: 18px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.ap-weekHint {
+  margin-top: 6px;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 13px;
+}
+
+.ap-weekLoading {
+  margin-top: 8px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.70);
+}
+
+.ap-weekGrid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.ap-dayCard {
+  text-align: left;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(0, 0, 0, 0.18);
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.25);
+  padding: 12px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.90);
+}
+
+.ap-dayCard:hover {
+  border-color: rgba(95, 168, 255, 0.22);
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(95, 168, 255, 0.10) inset;
+}
+
+.ap-dayHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.ap-dayLeft {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.ap-dayName {
+  font-weight: 900;
+}
+
+.ap-dayDate {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.ap-dayCount {
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.ap-dayCount.has {
+  border-color: rgba(95, 168, 255, 0.22);
+  background: rgba(95, 168, 255, 0.10);
+  color: rgba(210, 235, 255, 0.95);
+}
+
+.ap-dayBody {
+  /* 09:00–19:00 saatleri alt alta, taşarsa aşağı doğru uzasın */
+  display: grid;
+  gap: 10px;
+  max-height: 520px;
+  overflow: auto;
+  padding-right: 6px;
+}
+
+/* scrollbar  */
+.ap-dayBody::-webkit-scrollbar { width: 8px; }
+.ap-dayBody::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.10);
+  border-radius: 999px;
+}
+.ap-dayBody::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.ap-hourRow {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 10px;
+  align-items: start;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 14px;
+  padding: 10px;
+}
+
+.ap-hourLabel {
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12px;
+  padding-top: 2px;
+}
+
+.ap-hourItems {
+  display: grid;
+  gap: 8px;
+}
+
+.ap-hourEmpty {
+  color: rgba(255, 255, 255, 0.35);
+  font-weight: 800;
+}
+
+.ap-wAppt {
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(0, 0, 0, 0.18);
+  padding: 8px 10px;
+}
+
+.ap-wApptTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.ap-wTime {
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 12px;
+}
+
+.ap-wMain {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.ap-wPatient {
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.ap-wProc {
+  margin-left: 6px;
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 800;
+}
+
+.ap-wbadge {
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.80);
+  font-size: 11px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.ap-wbadge--blue {
+  border-color: rgba(95, 168, 255, 0.35);
+  background: rgba(95, 168, 255, 0.14);
+  color: rgba(210, 235, 255, 0.95);
+}
+
+.ap-wbadge--violet {
+  border-color: rgba(159, 123, 255, 0.35);
+  background: rgba(159, 123, 255, 0.14);
+  color: rgba(235, 225, 255, 0.95);
+}
+
+.ap-dayFoot {
+  margin-top: 10px;
+  color: rgba(180, 210, 255, 0.72);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .ap-weekGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 720px) {
+  .ap-weekGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 520px) {
+  .ap-weekGrid {
+    grid-template-columns: 1fr;
+  }
+}
+.ap-weekTopRow{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:16px;
+}
+
+.ap-weekNav{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding-top:6px;
+}
+
+.ap-weekArrow{
+  width:38px;
+  height:38px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,0.12);
+  background:rgba(255,255,255,0.06);
+  color:rgba(255,255,255,0.92);
+  font-size:22px;
+  font-weight:900;
+  cursor:pointer;
+}
+
+.ap-weekArrow:hover{
+  border-color: rgba(95,168,255,0.22);
+  box-shadow: 0 0 0 1px rgba(95,168,255,0.10) inset;
+}
+
+.ap-weekArrow.is-disabled{
+  opacity:.45;
+  cursor:not-allowed;
+}
+
+.ap-weekRange{
+  padding:8px 12px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,0.12);
+  background:rgba(0,0,0,0.14);
+  color:rgba(255,255,255,0.72);
+  font-weight:900;
+  font-size:12px;
+  white-space:nowrap;
+}
+
+.ap-weekGrid--3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 900px){
+  .ap-weekGrid--3{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 520px){
+  .ap-weekGrid--3{
+    grid-template-columns: 1fr;
+  }
+  .ap-weekTopRow{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+}

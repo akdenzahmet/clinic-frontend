@@ -1,0 +1,594 @@
+.home-root {
+  padding: 18px;
+  color: rgba(255,255,255,0.92);
+  background:
+    radial-gradient(1200px 600px at 20% 0%, rgba(120, 90, 255, 0.18), transparent 60%),
+    radial-gradient(900px 500px at 80% 10%, rgba(95, 168, 255, 0.16), transparent 55%);
+}
+
+.home-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* HERO */
+.home-hero {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 18px;
+  align-items: stretch;
+  margin-top: 10px;
+}
+
+.home-kicker {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  padding: 7px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(0,0,0,0.20);
+  color: rgba(255,255,255,0.72);
+  font-size: 13px;
+}
+.home-tooth { filter: drop-shadow(0 8px 18px rgba(0,0,0,0.35)); }
+
+.home-title {
+  margin: 14px 0 10px;
+  font-size: 46px;
+  letter-spacing: 0.2px;
+  text-shadow: 0 16px 55px rgba(0,0,0,0.45);
+}
+
+.home-subtitle {
+  margin: 0 0 16px;
+  color: rgba(255,255,255,0.72);
+  line-height: 1.6;
+  max-width: 54ch;
+}
+
+.home-ctaRow {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.home-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.92);
+  text-decoration: none;
+  font-weight: 900;
+}
+.home-btn:hover { background: rgba(255,255,255,0.10); }
+
+.home-btnPrimary {
+  background: linear-gradient(90deg, rgba(95,168,255,0.38), rgba(159,123,255,0.30));
+  border-color: rgba(125,170,255,0.20);
+}
+.home-btnPrimary:hover {
+  background: linear-gradient(90deg, rgba(95,168,255,0.48), rgba(159,123,255,0.38));
+}
+
+.home-btnGhost { background: rgba(0,0,0,0.18); }
+
+.home-badgesRow {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.home-pill {
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(0,0,0,0.18);
+  color: rgba(255,255,255,0.72);
+  font-size: 12px;
+}
+
+.home-heroRight { display: flex; }
+.home-heroCard {
+  width: 100%;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(0,0,0,0.22);
+  box-shadow: 0 16px 50px rgba(0,0,0,0.35);
+  overflow: hidden;
+}
+.home-heroImage {
+  height: 180px;
+  background:
+    radial-gradient(700px 280px at 25% 0%, rgba(159,123,255,0.28), transparent 65%),
+    radial-gradient(700px 280px at 85% 20%, rgba(95,168,255,0.22), transparent 60%),
+    rgba(255,255,255,0.04);
+}
+.home-heroCardText { padding: 12px; }
+.home-heroCardTitle { font-weight: 900; margin-bottom: 8px; }
+.home-heroCardLine {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: rgba(255,255,255,0.72);
+  margin: 6px 0;
+  font-size: 13px;
+}
+.home-dot {
+  width: 7px; height: 7px; border-radius: 999px;
+  background: rgba(255,255,255,0.35);
+}
+
+/* SECTION */
+.home-section { margin-top: 22px; }
+.home-sectionTop {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.home-h2 { margin: 0; font-size: 22px; font-weight: 900; }
+.home-muted { color: rgba(255,255,255,0.65); margin: 0; }
+
+/* CARDS */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.home-card {
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(0,0,0,0.20);
+  padding: 12px;
+}
+.home-cardTitle { font-weight: 900; margin-bottom: 6px; }
+.home-cardDesc { color: rgba(255,255,255,0.70); font-size: 13px; line-height: 1.55; }
+
+/* DOCTORS */
+.home-docGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.home-docCard {
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(0,0,0,0.22);
+  padding: 12px;
+  box-shadow: 0 16px 45px rgba(0,0,0,0.30);
+}
+.home-docCard--blue {
+  box-shadow: 0 16px 45px rgba(0,0,0,0.30), 0 0 0 1px rgba(95,168,255,0.10) inset;
+}
+.home-docCard--violet {
+  box-shadow: 0 16px 45px rgba(0,0,0,0.30), 0 0 0 1px rgba(159,123,255,0.10) inset;
+}
+.home-docTop { display: flex; gap: 10px; align-items: center; }
+.home-avatar {
+  width: 44px; height: 44px; border-radius: 14px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+.home-docName { font-weight: 900; }
+.home-docRole { color: rgba(255,255,255,0.70); font-size: 13px; margin-top: 2px; }
+.home-docMeta { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+.home-docChip {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.74);
+}
+
+/* WHY */
+.home-whyGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.home-whyCard {
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(0,0,0,0.20);
+  padding: 12px;
+}
+.home-whyTitle { font-weight: 900; margin-bottom: 6px; }
+.home-whyDesc { color: rgba(255,255,255,0.70); font-size: 13px; line-height: 1.55; }
+
+/* CONTACT */
+.home-contact {
+  margin-top: 22px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(0,0,0,0.22);
+  box-shadow: 0 16px 55px rgba(0,0,0,0.35);
+  padding: 14px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 12px;
+}
+.home-h3 { margin: 0 0 8px; font-size: 18px; font-weight: 900; }
+
+.home-contactRows { margin-top: 10px; display: grid; gap: 8px; }
+.home-contactRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.04);
+  padding: 10px 12px;
+}
+.home-contactLabel { color: rgba(255,255,255,0.65); font-size: 13px; }
+.home-contactValue { color: rgba(255,255,255,0.92); font-weight: 800; text-decoration: none; }
+
+.home-mapMock {
+  height: 100%;
+  min-height: 160px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background:
+    radial-gradient(700px 220px at 35% 0%, rgba(159,123,255,0.20), transparent 65%),
+    radial-gradient(700px 220px at 85% 40%, rgba(95,168,255,0.18), transparent 60%),
+    rgba(255,255,255,0.03);
+  padding: 12px;
+}
+.home-mapTitle { font-weight: 900; margin-bottom: 6px; }
+.home-mapHint { color: rgba(255,255,255,0.70); font-size: 13px; }
+
+/* FOOTER */
+.home-footer {
+  margin: 18px 0 8px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255,255,255,0.10);
+}
+.home-footerBrand { font-weight: 900; }
+.home-footerMuted { color: rgba(255,255,255,0.60); font-size: 13px; margin-top: 4px; }
+.home-footerRight { display: flex; gap: 12px; flex-wrap: wrap; }
+.home-footerLink { color: rgba(180,210,255,0.92); text-decoration: none; font-weight: 800; }
+.home-footerLink:hover { text-decoration: underline; }
+
+/* RESPONSIVE */
+@media (max-width: 920px) {
+  .home-hero { grid-template-columns: 1fr; }
+  .home-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .home-whyGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .home-contact { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .home-title { font-size: 34px; }
+  .home-grid { grid-template-columns: 1fr; }
+  .home-docGrid { grid-template-columns: 1fr; }
+  .home-whyGrid { grid-template-columns: 1fr; }
+}
+.home-link {
+  color: rgba(180,210,255,0.92);
+  text-decoration: none;
+  font-weight: 800;
+}
+.home-link:hover { text-decoration: underline; color: #fff; }
+/* HERO logo kutusu düzeltme */
+.home-heroImage {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  padding: 10px !important;
+}
+
+/* Logo görseli */
+.home-heroImage img {
+  width: 100% !important;
+  max-width: 260px;     /* Masaüstü */
+  height: auto !important;
+  object-fit: contain; /* KESİNLİKLE kırpmaz */
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+/* Mobilde daha küçük */
+@media (max-width: 600px) {
+  .home-heroImage img {
+    max-width: 200px;
+  }
+}
+/* CANLI GOOGLE MAPS */
+.home-mapLive {
+  height: 100%;
+  min-height: 220px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.14);
+  box-shadow: 0 16px 45px rgba(0,0,0,0.35);
+}
+
+.home-mapLive iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  filter: saturate(1.1) contrast(1.05);
+}
+.home-mapBox {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.14);
+  box-shadow: 0 18px 55px rgba(0,0,0,0.45);
+}
+
+.home-mapBox iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  filter: grayscale(.15) contrast(1.05) brightness(.95);
+}
+.home-mapRouteBtn {
+  margin-top: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border-radius: 16px;
+  text-decoration: none;
+  font-weight: 900;
+  color: #e8f1ff;
+
+  background: linear-gradient(90deg, rgba(95,168,255,.45), rgba(159,123,255,.40));
+  box-shadow: 0 18px 40px rgba(0,0,0,.45);
+  border: 1px solid rgba(255,255,255,.18);
+
+  transition: transform .15s ease, box-shadow .2s ease;
+}
+
+.home-mapRouteBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 55px rgba(0,0,0,.6);
+}
+/* Harita alanında butonun kırpılmasını engelle */
+.home-mapBox {
+  overflow: visible;            /* kritik */
+}
+
+/* Eğer mapBox'ta radius + overflow hidden varsa, iframe'e uygula */
+.home-mapBox iframe {
+  border-radius: 16px;
+  overflow: hidden;
+  display: block;
+}
+
+/* Buton görünür ve tıklanabilir olsun */
+.home-mapRouteBtn {
+  position: relative;
+  z-index: 5;
+}
+
+/* (Opsiyonel) Butonun altta kalmaması için biraz boşluk */
+.home-mapBox {
+  padding-bottom: 8px;
+}
+/* Harita kartı: iframe + buton aynı kutuda */
+.home-mapBox{
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background:
+    radial-gradient(700px 220px at 35% 0%, rgba(159,123,255,0.20), transparent 65%),
+    radial-gradient(700px 220px at 85% 40%, rgba(95,168,255,0.18), transparent 60%),
+    rgba(255,255,255,0.03);
+
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+  overflow: hidden; /* kartın köşesi taşmasın */
+}
+
+/* iframe düzgün otursun */
+.home-mapBox iframe{
+  width: 100%;
+  height: 220px;
+  border: 0;
+  border-radius: 14px;
+  display: block;
+}
+
+/* Buton harita kartının içinde, tam genişlik */
+.home-mapRouteBtn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 14px;
+
+  border: 1px solid rgba(255,255,255,0.14);
+  background: linear-gradient(90deg, rgba(95,168,255,0.38), rgba(159,123,255,0.30));
+  color: rgba(255,255,255,0.92);
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.home-mapRouteBtn:hover{
+  background: linear-gradient(90deg, rgba(95,168,255,0.48), rgba(159,123,255,0.38));
+}
+.home-btnWhatsapp {
+  background: linear-gradient(90deg, rgba(37, 211, 102, 0.26), rgba(95, 168, 255, 0.18));
+  border-color: rgba(37, 211, 102, 0.22);
+}
+.home-btnWhatsapp:hover {
+  background: linear-gradient(90deg, rgba(37, 211, 102, 0.34), rgba(95, 168, 255, 0.24));
+}
+/* === KLİNİĞİMİZ (GALERİ) === */
+.home-gallery{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.home-galleryItem{
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(0,0,0,0.20);
+  overflow: hidden;
+  box-shadow: 0 16px 45px rgba(0,0,0,0.30);
+}
+
+.home-galleryItem img{
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+}
+
+.home-galleryCap{
+  padding: 10px 12px;
+  font-weight: 800;
+  color: rgba(255,255,255,0.82);
+  font-size: 13px;
+}
+
+/* === HEKİM FOTOĞRAFLI AVATAR === */
+.home-avatarImg{
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  object-fit: cover;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.06);
+}
+
+/* responsive */
+@media (max-width: 920px){
+  .home-gallery{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px){
+  .home-gallery{ grid-template-columns: 1fr; }
+  .home-galleryItem img{ height: 190px; }
+}
+/* === DOCTOR CARD PREMIUM ACCENT === */
+.home-docCard{
+  position: relative;
+  overflow: hidden;
+}
+
+.home-docCard::before{
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 18px;
+  pointer-events: none;
+  opacity: 0.0;
+  transition: opacity .25s ease, transform .25s ease;
+  transform: translateY(2px);
+}
+
+.home-docCard:hover::before{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.home-docCard--blue::before{
+  background: radial-gradient(700px 180px at 10% 0%, rgba(95,168,255,0.18), transparent 55%),
+              radial-gradient(600px 160px at 90% 10%, rgba(159,123,255,0.10), transparent 60%);
+}
+
+.home-docCard--violet::before{
+  background: radial-gradient(700px 180px at 10% 0%, rgba(159,123,255,0.18), transparent 55%),
+              radial-gradient(600px 160px at 90% 10%, rgba(95,168,255,0.10), transparent 60%);
+}
+
+/* Avatar img zaten eklemiştik; hover'da hafif canlılık */
+.home-avatarImg{
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.home-docCard:hover .home-avatarImg{
+  transform: translateY(-1px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+/* === GALERİ ITEM BUTON OLDU (button reset) === */
+.home-galleryItem{
+  appearance: none;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(0,0,0,0.20);
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 16px 45px rgba(0,0,0,0.30);
+}
+.home-galleryItem:hover{
+  border-color: rgba(255,255,255,0.18);
+}
+
+/* === LIGHTBOX === */
+.home-lightbox{
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  background: rgba(0,0,0,0.72);
+  backdrop-filter: blur(10px);
+}
+
+.home-lightboxInner{
+  width: min(980px, 100%);
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(15,16,20,0.88);
+  box-shadow: 0 22px 70px rgba(0,0,0,0.55);
+  overflow: hidden;
+  position: relative;
+}
+
+.home-lightboxInner img{
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 74vh;
+  object-fit: contain;
+  background: rgba(0,0,0,0.25);
+}
+
+.home-lightboxCap{
+  padding: 12px 14px;
+  color: rgba(255,255,255,0.82);
+  font-weight: 800;
+  font-size: 13px;
+  border-top: 1px solid rgba(255,255,255,0.10);
+}
+
+.home-lightboxClose{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(0,0,0,0.35);
+  color: rgba(255,255,255,0.92);
+  font-weight: 900;
+  cursor: pointer;
+}
+.home-lightboxClose:hover{
+  background: rgba(255,255,255,0.10);
+}

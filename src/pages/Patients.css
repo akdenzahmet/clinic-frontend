@@ -1,0 +1,953 @@
+.patients-root {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 22px;
+}
+
+.patients-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.patients-sub {
+  opacity: 0.8;
+  margin-top: 6px;
+}
+
+.patients-search {
+  width: min(420px, 100%);
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(0,0,0,.20);
+  color: rgba(255,255,255,.92);
+}
+
+.patients-card {
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(0,0,0,.18);
+  border-radius: 18px;
+  padding: 14px;
+  margin-bottom: 14px;
+}
+
+.patients-muted {
+  opacity: .75;
+  padding: 10px 4px;
+}
+
+.patients-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.patients-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 12px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.10);
+  text-decoration: none;
+  color: rgba(255,255,255,.92);
+  background: rgba(0,0,0,.10);
+}
+
+.patients-row:hover {
+  border-color: rgba(255,255,255,.18);
+  background: rgba(0,0,0,.16);
+}
+
+.patients-name {
+  font-weight: 900;
+  letter-spacing: .2px;
+}
+
+.patients-phone {
+  opacity: .85;
+}
+
+.patients-btn {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.06);
+  color: rgba(255,255,255,.92);
+  cursor: pointer;
+}
+
+.patient-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.patient-kv .k {
+  opacity: .70;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.patient-kv .v {
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.patients-sectionTitle {
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.appts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.appts-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(0,0,0,.10);
+}
+
+.appts-dt {
+  font-weight: 900;
+}
+
+.appts-meta {
+  margin-top: 6px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pill {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.14);
+  opacity: .9;
+}
+
+.pill2 {
+  opacity: .85;
+}
+
+.appts-right {
+  text-align: right;
+  opacity: .92;
+}
+
+.appts-snap {
+  font-weight: 900;
+}
+
+.appts-snap2 {
+  opacity: .8;
+  margin-top: 4px;
+  font-size: 12px;
+}
+.patients-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.patients-rowLink {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  color: inherit;
+}
+
+.patients-actions { display: flex; gap: 8px; }
+
+.patients-miniBtn {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,.15);
+  background: rgba(255,255,255,.06);
+  color: rgba(255,255,255,.9);
+  cursor: pointer;
+}
+.patients-miniBtn:hover { background: rgba(255,255,255,.10); }
+.patients-rowWrap{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.patients-row{
+  flex:1;
+}
+
+.patients-del{
+  border:1px solid rgba(255,255,255,.14);
+  background: rgba(255,0,0,.08);
+  color: rgba(255,255,255,.88);
+  padding: 10px 14px;
+  border-radius: 12px;
+  cursor:pointer;
+}
+.patients-del:hover{
+  background: rgba(255,0,0,.14);
+}
+.patient-actions{
+  display:flex;
+  gap:10px;
+  margin-top:10px;
+}
+.patient-top input{
+  background: rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:10px;
+  padding:8px 10px;
+  color:white;
+}
+.patients-root{ padding: 18px; }
+.patients-card{
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 18px;
+  padding: 12px;
+}
+
+.patients-row{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 14px;
+  text-decoration:none;
+  color: rgba(255,255,255,.92);
+}
+.patients-row:hover{
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.12);
+}
+.patients-phone{ color: rgba(255,255,255,.70); }
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(0,0,0,.20);
+  color: rgba(255,255,255,.88);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.pill-doc {
+  border-color: rgba(120,180,255,.28);
+  background: rgba(80,140,255,.14);
+}
+
+.pill-proc {
+  border-color: rgba(200,140,255,.28);
+  background: rgba(180,120,255,.14);
+}
+
+.pill-time {
+  border-color: rgba(120,240,210,.28);
+  background: rgba(80,220,200,.12);
+}
+.patient-actions{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  justify-content:flex-end;
+}
+
+.patients-input{
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(0,0,0,.25);
+  color: rgba(255,255,255,.9);
+  outline: none;
+}
+
+.patients-btn--ghost{
+  background: transparent;
+  border: 1px solid rgba(255,255,255,.14);
+}
+
+.patient-notesBox{
+  margin-top: 12px;
+  padding: 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.03);
+}
+
+.patient-notesTitle{
+  font-weight: 900;
+  color: rgba(255,255,255,.9);
+  margin-bottom: 8px;
+}
+
+.patient-notesTextarea{
+  width: 100%;
+  resize: vertical;
+  padding: 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(0,0,0,.22);
+  color: rgba(255,255,255,.9);
+  outline: none;
+}
+
+.patient-notesText{
+  color: rgba(255,255,255,.78);
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+/* =========================
+   TOOTH SCHEMA
+========================= */
+.tooth-box {
+  margin-top: 14px;
+  padding: 14px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.04);
+}
+
+.tooth-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.tooth-title {
+  font-weight: 900;
+  letter-spacing: .2px;
+}
+
+.tooth-gridWrap {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 14px;
+}
+
+@media (max-width: 980px) {
+  .tooth-gridWrap { grid-template-columns: 1fr; }
+}
+
+.tooth-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.tooth-row {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr) 18px repeat(8, 1fr);
+  gap: 8px;
+  align-items: stretch;
+}
+
+.tooth-gap {
+  width: 18px;
+}
+
+.tooth-btn {
+  position: relative;
+  border-radius: 14px;
+  padding: 12px 10px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(0,0,0,.22);
+  color: rgba(255,255,255,.92);
+  cursor: pointer;
+  transition: transform .08s ease, border-color .12s ease, background .12s ease;
+}
+
+.tooth-btn:hover {
+  transform: translateY(-1px);
+  border-color: rgba(255,255,255,.22);
+}
+
+.tooth-btn.is-active {
+  border-color: rgba(140, 180, 255, .55);
+  background: rgba(80, 130, 255, .16);
+}
+
+.tooth-btn.has {
+  border-color: rgba(255,255,255,.22);
+}
+
+.tooth-btn.is-done {
+  border-color: rgba(120, 255, 190, .45);
+  background: rgba(70, 200, 140, .12);
+}
+
+.tooth-code {
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.tooth-dot {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  min-width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  font-size: 12px;
+  background: rgba(255,255,255,.10);
+  border: 1px solid rgba(255,255,255,.12);
+}
+
+.tooth-side {
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(0,0,0,.18);
+  padding: 12px;
+}
+
+.tooth-form {
+  display: grid;
+  gap: 10px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  margin-bottom: 12px;
+}
+
+.tooth-formLabel {
+  color: rgba(255,255,255,.75);
+  font-size: 13px;
+}
+
+.tooth-formBtns {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tooth-listTitle {
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.tooth-items {
+  display: grid;
+  gap: 10px;
+}
+
+.tooth-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border-radius: 14px;
+  padding: 10px 12px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.03);
+}
+
+.tooth-item.done {
+  border-color: rgba(120, 255, 190, .35);
+  background: rgba(70, 200, 140, .08);
+}
+
+.tooth-itemProc {
+  font-weight: 900;
+}
+
+.tooth-itemMeta {
+  font-size: 12px;
+  color: rgba(255,255,255,.65);
+  margin-top: 2px;
+}
+
+.tooth-itemSep { opacity: .7; margin: 0 6px; }
+
+.tooth-itemBtns {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tooth-miniBtn {
+  border-radius: 12px;
+  padding: 8px 10px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(0,0,0,.22);
+  color: rgba(255,255,255,.9);
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.tooth-miniBtn:hover {
+  border-color: rgba(255,255,255,.22);
+}
+
+.tooth-miniBtn.danger {
+  border-color: rgba(255, 120, 120, .35);
+  background: rgba(255, 80, 80, .10);
+}
+/* taşmayı engelle */
+.tooth-box, .tooth-gridWrap, .tooth-side, .tooth-grid {
+  min-width: 0;
+}
+
+.tooth-box { overflow: hidden; }
+
+/* sağ panel çok genişlemesin */
+.tooth-gridWrap {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+  gap: 14px;
+}
+
+/* küçük ekranlarda alt alta */
+@media (max-width: 1100px) {
+  .tooth-gridWrap { grid-template-columns: 1fr; }
+}
+
+/* diş butonları çok uzamasın */
+.tooth-btn { width: 100%; }
+
+/* select / input genişliği */
+.tooth-side .patients-input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* kayıtlar alanı taşmasın */
+.tooth-items, .tooth-itemMain {
+  min-width: 0;
+}
+
+.tooth-itemProc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 220px;
+}
+
+@media (max-width: 1100px) {
+  .tooth-itemProc { max-width: 100%; }
+}
+/* Diş şeması ana kutu */
+.tooth-layout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 16px;
+  width: 100%;
+}
+
+/* Sağ panel artık grid hücresi */
+.tooth-panel {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+}
+
+/* Küçük ekranlarda alta düş */
+@media (max-width: 1100px) {
+  .tooth-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .tooth-panel {
+    max-width: 100%;
+  }
+}
+/* === TOOTH LAYOUT FIX (OVERLAP BİTER) === */
+.tooth-layout {
+  display: grid;
+  grid-template-columns: 1fr 360px; /* sağ panel sabit */
+  gap: 16px;
+  align-items: start;
+  width: 100%;
+  overflow: hidden; /* taşmayı kes */
+}
+
+.tooth-grid {
+  min-width: 0; /* grid içinde taşma önler */
+}
+
+.tooth-panel {
+  min-width: 0;
+  width: 100%;
+  position: static !important; /* ABSOLUTE falan varsa öldür */
+}
+
+.tooth-form,
+.tooth-list {
+  width: 100%;
+}
+
+/* select/input taşmasın */
+.tooth-panel .patients-input,
+.tooth-panel select,
+.tooth-panel input {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* küçük ekranda alt alta */
+@media (max-width: 1100px) {
+  .tooth-layout {
+    grid-template-columns: 1fr;
+  }
+}
+.tooth-side,
+.tooth-gridWrap,
+.tooth-form,
+.tooth-list {
+  position: static !important;
+}
+.tooth-gridWrap {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  flex-wrap: wrap;   /* ⬅ taşınca alta düşsün */
+}
+
+.tooth-grid {
+  flex: 1;
+  min-width: 520px;
+}
+
+.tooth-side {
+  width: 340px;
+  max-width: 100%;
+}
+/* Patients.css dosyanızda bu kısımları güncelleyin */
+
+.tooth-layout {
+  display: flex;
+  flex-wrap: wrap; /* Alan yetmediğinde alt satıra geçer */
+  gap: 20px;       /* Panel ile dişler arasına boşluk koyar */
+  align-items: flex-start;
+}
+
+.tooth-grid {
+  flex: 1;         /* Mümkün olan alanı kaplar */
+  min-width: 320px; /* Dişlerin birbirine girmesini engeller */
+}
+
+.tooth-panel {
+  flex: 0 0 300px; /* Panelin genişliğini sabit tutar */
+  background: #2a2a2a; /* Arka planı belirginleştirirseniz karışıklık azalır */
+  padding: 15px;
+  border-radius: 8px;
+}
+/* Ana taşıyıcıyı dikey (column) yapıyoruz */
+.tooth-layout {
+  display: flex;
+  flex-direction: column; /* Yan yana yerine alt alta dizer */
+  gap: 24px;
+  width: 100%;
+}
+
+.tooth-grid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* Eğer üzerinde position: relative varsa kalsın, ama absolute olmamalı */
+}
+
+.tooth-row {
+  display: flex;
+  justify-content: center; /* Dişleri ortalar */
+  gap: 6px;
+  flex-wrap: wrap; /* Küçük ekranlarda dişlerin sığmasını sağlar */
+}
+
+/* Panelin genişliğini ve duruşunu ayarlıyoruz */
+.tooth-panel {
+  width: 100%;
+  background-color: #242424; /* Kartın geri kalanıyla uyumlu koyu ton */
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  /* ÖNEMLİ: Eğer burada 'position: absolute' varsa mutlaka SİLİN */
+}
+
+.tooth-form {
+  display: flex;
+  flex-wrap: wrap; /* Form elemanlarını yan yana dizer, sığmazsa alta geçer */
+  align-items: center;
+  gap: 15px;
+}
+/* Ana taşıyıcı */
+.tooth-layout {
+  display: flex;
+  flex-direction: column; /* Panel dişlerin altına insin */
+  gap: 30px;
+  width: 100%;
+}
+
+/* Dişlerin olduğu üst kısım */
+.tooth-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center; /* Diş şemasını ortalar */
+}
+
+/* Diş satırları - Sayıların yan yana kalmasını sağlar */
+.tooth-row {
+  display: flex;
+  flex-direction: row; /* ÖNEMLİ: Dişler yan yana dizilmeli */
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+}
+
+/* Müdahale Paneli (Dişlerin altındaki geniş alan) */
+.tooth-panel {
+  width: 100%;
+  background: #1e1e1e; /* Kart rengine göre ayarlayın */
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #333;
+}
+
+/* Formu yan yana dizmek isterseniz */
+.tooth-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #333;
+}
+
+/* Diş butonlarının genişlemesini engelleyin */
+.tooth-btn {
+  width: 45px;
+  height: 45px;
+  /* Diğer mevcut stilleriniz */
+}
+.tooth-panel{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+/* Eğer panel dar ekranda taşarsa */
+@media (max-width: 1100px){
+  .tooth-panel{
+    grid-template-columns: 1fr;
+  }
+}
+
+.tooth-summary{
+  margin-top: 12px;
+  padding: 16px;
+  border-radius: 16px;
+  background: rgba(0,0,0,.25);
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+.tooth-summaryTitle{
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.tooth-summaryStats{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.sum-pill{
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+.sum-pill.ok{ border-color: rgba(0,255,140,.25); }
+.sum-pill.wait{ border-color: rgba(255,200,0,.25); }
+
+.tooth-summaryList{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 260px;
+  overflow: auto;
+  padding-right: 6px;
+}
+
+.tooth-summaryRow{
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 14px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  cursor: pointer;
+}
+
+.tooth-summaryRow.is-active{
+  border-color: rgba(100,170,255,.35);
+  background: rgba(100,170,255,.08);
+}
+
+.ts-code{ font-weight: 800; }
+.ts-mini{ opacity: .85; font-size: 13px; margin-top: 2px; }
+
+.ts-badge{
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.06);
+}
+
+.ts-badge.ok{ border-color: rgba(0,255,140,.25); }
+.ts-badge.wait{ border-color: rgba(255,200,0,.25); }
+.tooth-panel{
+  display: grid;
+  grid-template-columns: 340px 1fr 340px;
+  gap: 16px;
+  align-items: start;
+}
+
+@media (max-width: 1200px){
+  .tooth-panel{
+    grid-template-columns: 1fr;
+  }
+}
+.tooth-miniSummary{
+  margin-top: 16px;
+  padding: 14px;
+  border-radius: 14px;
+  background: linear-gradient(145deg,#1f1f1f,#242424);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.05);
+}
+
+.mini-title{
+  font-weight: 700;
+  margin-bottom: 10px;
+  color:#9ddcff;
+}
+
+.mini-stats{
+  display:flex;
+  gap:8px;
+  margin-bottom:10px;
+}
+
+.mini-pill{
+  padding:4px 10px;
+  border-radius:999px;
+  font-size:13px;
+}
+
+.mini-pill.ok{
+  background:#173b2c;
+  color:#5dffb3;
+}
+
+.mini-pill.wait{
+  background:#3b2a17;
+  color:#ffd58a;
+}
+
+.mini-last{
+  font-size:14px;
+  opacity:.9;
+}
+
+.mini-lastStatus{
+  margin-left:8px;
+  font-size:12px;
+  opacity:.7;
+}
+.tooth-progress{
+  width: 100%;
+  height: 6px;
+  margin-top: 8px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(255,255,255,.08);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.05);
+}
+
+.tooth-progressFill{
+  height: 100%;
+  width: 0%;
+  border-radius: 999px;
+  transition: width .25s ease;
+}
+
+/* renk temaları */
+.tooth-progress.none .tooth-progressFill{
+  background: rgba(255,255,255,.18);
+}
+
+.tooth-progress.mixed .tooth-progressFill{
+  background: #f3c65a; /* sarı */
+}
+
+.tooth-progress.done .tooth-progressFill{
+  background: #4ee59a; /* yeşil */
+}
+.tooth-count{
+  font-size: 12px;
+  margin-top: 6px;
+  opacity: .75;
+  font-weight: 600;
+}
+
+/* bar */
+.tooth-progress{
+  width: 100%;
+  height: 6px;
+  margin-top: 6px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(255,255,255,.08);
+}
+
+.tooth-progressFill{
+  height: 100%;
+  width: 0%;
+  transition: width .25s ease;
+  border-radius: 999px;
+}
+
+/* renkler */
+.tooth-progress.mixed .tooth-progressFill{ background: #f3c65a; }   /* sarı */
+.tooth-progress.done  .tooth-progressFill{ background: #4ee59a; }   /* yeşil */
+.pageFadeIn {
+  animation: pageFadeIn 220ms ease-out both;
+}
+
+@keyframes pageFadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

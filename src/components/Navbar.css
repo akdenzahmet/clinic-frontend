@@ -1,0 +1,120 @@
+.navbar-root {
+  width: 100%;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+
+  background: linear-gradient(180deg, rgba(0,0,0,.65), rgba(0,0,0,.4));
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-left { display: flex; align-items: center; gap: 12px; }
+.navbar-right { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.navbar-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+  padding: 6px;
+}
+
+.navbar-brandText { display: grid; gap: 2px; }
+.navbar-title {
+  color: rgba(255,255,255,0.92);
+  font-weight: 900;
+  letter-spacing: .2px;
+}
+.navbar-sub {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.70);
+}
+.navbar-dot { opacity: 0.6; }
+
+.navbar-subLink {
+  color: rgba(207,224,255,0.92);
+  text-decoration: none;
+}
+.navbar-subLink:hover { text-decoration: underline; color: #fff; }
+
+/* Links */
+.navbar-link {
+  position: relative;
+  padding: 8px 12px;
+  border-radius: 12px;
+
+  font-weight: 800;
+  letter-spacing: .3px;
+  color: #cfe0ff;
+
+  text-decoration: none !important;
+  border: 1px solid transparent;
+
+  transition: all .25s ease;
+}
+
+/* Hover cam efekti */
+.navbar-link:hover {
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  border-color: rgba(255,255,255,0.10);
+}
+
+/* Active */
+.navbar-link.is-active {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.14);
+  color: #fff;
+}
+
+/* mor–mavi çizgi */
+.navbar-link::after {
+  content: "";
+  position: absolute;
+  left: 14%;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #5fa8ff, #9f7bff);
+  transition: width .3s ease;
+}
+
+.navbar-link:hover::after,
+.navbar-link.is-active::after {
+  width: 72%;
+}
+
+@media (max-width: 720px) {
+  .navbar-root { align-items: flex-start; }
+  .navbar-brandText { max-width: 64vw; }
+  .navbar-title { font-size: 14px; }
+  .navbar-sub { flex-wrap: wrap; row-gap: 4px; }
+}
+.nav-user{
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.14);
+  font-weight: 700;
+  font-size: 13px;
+}
