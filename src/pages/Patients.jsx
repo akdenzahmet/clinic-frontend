@@ -124,7 +124,11 @@ export default function Patients() {
       if (!res.ok) {
         const text = await res.text();
         let data = null;
-        try { data = text ? JSON.parse(text) : null; } catch {}
+        try {
+          data = text ? JSON.parse(text) : null;
+        } catch {
+          data = null;
+        }
       
         alert(data?.message || data?.detail || text || `HTTP ${res.status}`);
         return;

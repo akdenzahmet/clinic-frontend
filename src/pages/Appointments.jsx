@@ -176,6 +176,7 @@ export default function Appointments() {
     setOpenHour(null);
     setEditor((x) => ({ ...x, open: false }));
     window.scrollTo({ top: 0, behavior: "auto" });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [view, date, mode]);
 
   const apptsByTime = useMemo(() => {

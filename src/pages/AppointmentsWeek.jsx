@@ -71,6 +71,7 @@ export default function AppointmentsWeek({
   date,
   showToast,
   onPickDay,
+  onPickDate,
   onChangeDate,
 }) {
 
@@ -150,6 +151,7 @@ export default function AppointmentsWeek({
 
   useEffect(() => {
     loadWeek();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [date, view]);
 
   function doctorBadge(appt) {

@@ -258,13 +258,10 @@ export default function PatientDetail() {
 
   useEffect(() => {
     loadAll();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   const selectedList = selectedTooth ? toothByCode[selectedTooth] || [] : [];
-const allTreatments = useMemo(() => {
-  // tooths zaten tüm kayıtlar
-  return [...tooths].sort((a, b) => Number(a.toothCode) - Number(b.toothCode));
-}, [tooths]);
 
 const summary = useMemo(() => {
   const byTooth = {};
