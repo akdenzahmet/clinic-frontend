@@ -22,7 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-src/assets/private/
 .env
 node_modules/
 dist/
